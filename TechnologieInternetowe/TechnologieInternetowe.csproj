@@ -66,6 +66,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\d3.js" />
+    <Content Include="js\d3.min.js" />
+    <Content Include="js\D3_1_simpleCanvas.js" />
+    <Content Include="js\D3_2_simpleChart.js" />
+    <Content Include="js\D3_3_Transitions.js" />
+    <Content Include="js\D3_4_jsonAndEvents.js" />
+    <Content Include="js\D3_5_LinePlot.js" />
+    <Content Include="js\jquery-2.2.0.js" />
+    <Content Include="js\jquery-2.2.0.min.js" />
+    <Content Include="js\jquery.rwdImageMaps.js" />
+    <Content Include="js\jquery.rwdImageMaps.min.js" />
+    <Content Include="js\jquery_use.js" />
+    <Content Include="js\navigation.js" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -85,9 +100,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
