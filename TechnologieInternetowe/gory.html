@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title> Obrazek </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="js/jquery-2.2.0.min.js"></script>
+	</head>
+
+	<body>
+        <h1> Test web page</h1>
+        <nav>
+            <ul>
+                <li><a class="dropbtn" href="index.html">Glowna</a></li>
+                <li><a class="dropbtn" href="gory.html">Obrazek</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="table.html">Tablica</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="koloruj()">Koloruj Pasma</a>
+                        <a href="#" onclick="dodajObraz()">DodajObraz</a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        <em>Gory !</em><br>
+        <div width="600" height="400">
+            <img id="obrazek" src="grafika.jpg" border="0" width="1024" height="768" orgWidth="1024" orgHeight="768" usemap="#usemap" alt="" />
+            <map name="usemap" id="usemap">
+                <area alt="Turysta" title="Turysta" href="#" shape="rect" coords="456,269,474,295" style="outline:none;" target="_self" />
+                <area alt="Pasmo Gorskie" title="Wieksze czerwone wierchy!" href="#" shape="rect" coords="829,267,1022,336" style="outline:none;" target="_self" />
+                <area alt="Slonce" title="Slonce" href="#" shape="poly" coords="197,152,166,158,140,176,122,202,116,233,122,264,140,290,166,308,197,314,228,308,254,290,272,264,278,233,272,202,254,176,228,158" style="outline:none;" target="_self" />
+            </map>
+        </div>
+        <script src="js/jquery.rwdImageMaps.js"></script>
+        <script>
+            $(document).ready(function (e) {
+                $('img[usemap]').rwdImageMaps();
+
+                $('area').on('click', function () {
+                    alert($(this).attr('alt') + ' clicked');
+                });
+            });
+
+        </script>
+	</body>
+
+
+</html>
+<!--
+	Todo:
+	1) rozwijane menu -> lista list + w css format
+    	http://www.w3schools.com/css/css_navbar.asp
+	2) tabelki usuwanie np. border, scalanie, kolorowanie elmentow etc.
+        
+	Poszukac:
+	1) roznice html5 vs xtml
+	2) roznice css vs css3
+	nastepne:
+	1) css + js
+
+-->

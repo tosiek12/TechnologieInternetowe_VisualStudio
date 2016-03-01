@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title> Obrazek </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="js/jquery-2.2.0.min.js"></script>
+	</head>
+
+	<body>
+        <h1> Test web page</h1>
+		 <nav  >
+           <ul>
+               <li><a class="dropbtn" href="index.html">Glowna</a></li>
+               <li><a class="dropbtn" href="gory.html">Obrazek</a></li>
+               <li class="dropdown">
+                   <a class="dropbtn" href="table.html">Tablica</a>
+                   <div class="dropdown-content">
+                       <a href="#" onclick="koloruj()">Koloruj Pasma</a>
+                       <a href="#" onclick="dodajObraz()">DodajObraz</a>
+                   </div>
+               </li>
+           </ul>
+		</nav> 
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="wstaw">
+
+        </div>
+        <div class="withTable" >
+            <table>
+                <tr>
+                    <th>Szczyt</th>
+                    <th>Wysokosc</th>
+                </tr>
+                <tr>
+                    <td class="pasmo" colspan="2">Tatry</td>
+                </tr>
+                <tr >
+                    <td class="szczyty">Rysy</td>
+                    <td class="szczyty">2 503 m</td>
+                </tr>
+                <tr>
+                    <td class="pasmo" colspan="2">Gorce</td>
+                </tr>
+                <tr>
+                    <td>Turbacz</td>
+                    <td>1 315 m</td>
+                </tr>
+                <tr>
+                    <td>Radziejowa</td>
+                    <td>1 200 m</td>
+                </tr>
+            </table>
+        </div>
+
+        <script type="text/javascript">
+            function koloruj() {
+                var elems = document.getElementsByClassName("pasmo");
+
+                for (var i = 0; i < elems.length; i++) {
+                    elems[i].setAttribute('bgcolor', '#00FF00');
+                }
+            };
+            function dodajObraz() {
+                var elem = document.getElementById("wstaw");
+                elem.innerHTML = "<h1>tst</h1>";
+                elem.innerHTML = "<img src='grafika.jpg' border='0' width='200' height='130'/>";
+            };
+        </script>
+	</body>
+
+
+</html>
+<!--
+	Todo:
+	1) rozwijane menu -> lista list + w css format
+    	http://www.w3schools.com/css/css_navbar.asp
+	2) tabelki usuwanie np. border, scalanie, kolorowanie elmentow etc.
+        
+	Poszukac:
+	1) roznice html5 vs xtml
+	2) roznice css vs css3
+	nastepne:
+	1) css + js
+
+-->

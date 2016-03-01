@@ -1,0 +1,100 @@
+/* --------------- */
+/* Main page */
+body {
+    background-color:linen;
+}
+
+/* --------------- */
+/* Menu formatting */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #555;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a {
+	border-width:1px;
+	border-style:none dashed none dashed;
+    border-color:black;
+	padding:2px;
+}
+
+a.dropbtn:link {
+	color:white;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a.dropbtn:hover {
+    color: hotpink;
+	background-color:lightblue;
+}
+
+/* visited link */
+a.dropbtn:visited {
+    color:dodgerblue;
+}
+
+/* active link */
+a.dropbtn:active {
+    background-color: #4CAF50;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+/* --------------- */
+/* table formating */
+div.withTable {
+    overflow-x:auto;
+    width:50%;
+    min-width:500px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+tr:hover {background-color: #f5f5f5}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+td.pasmo {
+    text-align: center;
+    border-style:dashed none dashed none;
+    border-color:#aaa;
+    border-width:2px;
+}
+
