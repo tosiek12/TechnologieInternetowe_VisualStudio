@@ -33,6 +33,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>false</IncludeIisSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -72,7 +73,6 @@
     <Content Include="dashboard\css\bootstrap.min.css" />
     <Content Include="dashboard\css\main.css" />
     <None Include="dashboard\data\linePlot.json" />
-    <Content Include="dashboard\data\linePlot_json.txt" />
     <Content Include="dashboard\data\rawData_json.txt" />
     <Content Include="dashboard\favicon.ico" />
     <Content Include="dashboard\fonts\glyphicons-halflings-regular.svg" />
@@ -120,6 +120,8 @@
     <Content Include="dashboard\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="dashboard\css\bootstrap-theme.css.map" />
     <Content Include="dashboard\css\bootstrap.css.map" />
+    <Content Include="dashboard\data\linePlot_json.txt" />
+    <None Include="Properties\PublishProfiles\ArcDashboard - Web Deploy.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
