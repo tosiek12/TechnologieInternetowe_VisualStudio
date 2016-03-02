@@ -1,4 +1,4 @@
-d3.json("data/linePlot.json", function (data) {
+d3.json("data/linePlot_json.txt", function (data) {
 
     $("div#linePlot").prepend(data.reportType + "<br>");
     var xScale = d3.scale.linear()

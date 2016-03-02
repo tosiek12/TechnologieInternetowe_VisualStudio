@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -6,29 +6,26 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Dashboard</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
 
-        <!-- stylesheets: -->
+        <!-- Stylesheets: -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <!-- Scripts -->
-
-        <script src="js/d3.min.js"></script>
-        <script src="js/jquery-2.2.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
+        <script type="text/javascript" src="js/d3.min.js"></script>
+        <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js_Sharepoint/sharepointCommunication.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top" id="myNavBar">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="colapse" data-target="#navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
@@ -49,14 +46,17 @@ and open the template in the editor.
         <div class="jumbotron" id="myHeader">
             <div class="container text-center">
                 <h2>Recon dashboard</h2>
-                <a href="" class="btn btn-lg btn-warning">Trolo</a>
-                <a href="" class="btn btn-lg btn-info">trolo2</a>    
-                <a href="" class="btn btn-lg btn-danger">trolo2234</a> 
+                <a href="#none" class="btn btn-lg btn-warning">Trolo</a>
+                <a href="#none" class="btn btn-lg btn-info">trolo2</a>    
+                <a href="#none" class="btn btn-lg btn-danger">trolo2234</a> 
             </div>
         </div>
 
         <div class="container text-center" id="myBody">
             <section>
+                <div id="result" class="row">
+
+                </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <form class="form-inline" role="form">
@@ -86,7 +86,6 @@ and open the template in the editor.
                             <area shape="rect" alt="3" title="" coords="368,350,411,377" href="#imgmap" target="_self" />
                             <area shape="rect" alt="4" title="" coords="364,105,414,136" href="#imgmap" target="_self" />
                             <area shape="rect" alt="5" title="" coords="483,352,527,375" href="#imgmap" target="_self" />
-                            <!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -->
                         </map>
                         <img class=".img-rounded" src="img/swimlane_flowchart.png" alt="Process map" width="600" height="424" usemap="#imgmap" />
                     </div>
@@ -178,6 +177,7 @@ and open the template in the editor.
                                 .attr("stroke", "green")
                                 .attr("stroke-width", 2);
                     </script>
+                    
                     <script type="text/javascript">
                         var color = d3.scale.ordinal()
                                 .range(["blue", "red", "orange"]);
@@ -225,24 +225,6 @@ and open the template in the editor.
 
                     </script>
                 </div>
-                <div class="row alert-warning">
-                    <div id="tree1" class="col-lg-6">
-                        <script type="text/javascript">
-                            var canvas = d3.select("#arc1")
-                                    .append("svg")
-                                    .attr("width", 200)
-                                    .attr("height", 200);
-
-                        </script>
-                        trololo
-                    </div>
-                    <div id="tree2" class="col-lg-6">
-                        <script type="text/javascript">
-
-                        </script>
-                    </div>
-                </div>
-
 
                 <!--
                 <div id="visualisation" class="alert-info" style="border: solid black; border-width:thin">
@@ -255,49 +237,19 @@ and open the template in the editor.
 
         <script src="js/jquery.rwdImageMaps.js"></script>
         <script>
-                            $(document).ready(function (e) {
-                                $('img[usemap]').rwdImageMaps();
+            $(document).ready(function (e) {
+                $('img[usemap]').rwdImageMaps();
 
-                                $('area').on('click', function () {
-                                    alert($(this).attr('alt') + ' clicked');
-                                });
+                $('area').on('click', function () {
+                    alert($(this).attr('alt') + ' clicked');
+                });
 
-                                // div#tree2
-                                
-                                $(function () {
-                                    $.ajax({
-                                        type: "GET",
-                                        url: "https://maps.googleapis.com/maps/api/geocode/xml?sensor=false&address=Krakow",
-                                        success: function (resp) {
-                                            console.log("GET google:", resp);
-                                        },
-                                        error : function() {
-                                            alert("error in get google");
-                                        }
-                                    });
+                // div#tree2
+                testReceiving();
 
-                                    var sApiKey = "CsxxWN5xFUVkNgxqgixz";
-                                    $.ajax({
-                                        type: "GET",
-                                        //url: "https://api.pickpoint.io/v1/forward?key=CsxxWN5xFUVkNgxqgixz&q=Krakow",
-                                        url: "https://api.pickpoint.io/v1/forward?key=CsxxWN5xFUVkNgxqgixz&q=Krakow",
-                                        success: function (resp) {
-                                            console.log("Get pickpoint:", JSON.parse(resp));
-                                        }
-                                    });
-                                    
-                                    
-                                    $.ajax({
-                                        type: "POST",
-                                        url:  "https://maps.googleapis.com/maps/api/geocode/json?address=Krakow+Krolewska+57&key=AIzaSyDungHSYXbX7TEQ6sjRmhQ1el84HgGznBc",
-                                        success: function (resp) {
-                                            console.log("POST googeDev: ", resp);
-                                        }
-                                    });
-                                   
-                                });
+                ajaxTest();
 
-                            });
+            });
 
         </script>
         <script src="js/jquery_use.js"></script>

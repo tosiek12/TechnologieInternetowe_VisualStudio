@@ -1,4 +1,5 @@
-d3.json("./data/rawData.json", function (data) {
+d3.json("data/rawData_json.txt", function (data) {
+
     $("div#json").prepend(data.reportType + "<br>");
 
     var canvas = d3.select("div#json")
@@ -47,20 +48,21 @@ d3.json("./data/rawData.json", function (data) {
     });
 
 });
+
 function circle_onClick2() {
     var svgobj = d3.event.target;
     svgobj.style.opacity = 0.3;
     console.log("Rectangle no " + svgobj.getAttribute("id") + " on click even");
     d3.event.stopPropagation();
-}
+};
 
 $("p#dwa").click(function () {
     $("div#json").slideDown(1000);
 });
+
 function circle_onClick_jeden(evnt) {
     var svgobj = evnt.target;
     $("div#json").slideUp(1000);
     svgobj.style.opacity = 0.9;
     console.log("jeden " + svgobj.getAttribute("id") + " on click even");
-}
-;
+};
