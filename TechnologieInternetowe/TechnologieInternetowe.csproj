@@ -66,9 +66,31 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dashboard\css\bootstrap-theme.css" />
+    <Content Include="dashboard\css\bootstrap-theme.min.css" />
+    <Content Include="dashboard\css\bootstrap.css" />
+    <Content Include="dashboard\css\bootstrap.min.css" />
+    <Content Include="dashboard\css\main.css" />
     <Content Include="dashboard\favicon.ico" />
+    <Content Include="dashboard\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="dashboard\heinecen_all_item.aspx" />
+    <Content Include="dashboard\img\swimlane_flowchart.png" />
     <Content Include="dashboard\index.html" />
+    <Content Include="dashboard\js\bootstrap.js" />
+    <Content Include="dashboard\js\bootstrap.min.js" />
+    <Content Include="dashboard\js\d3.js" />
+    <Content Include="dashboard\js\d3.min.js" />
+    <Content Include="dashboard\js\D3_1_simpleCanvas.js" />
+    <Content Include="dashboard\js\D3_2_simpleChart.js" />
+    <Content Include="dashboard\js\D3_3_Transitions.js" />
+    <Content Include="dashboard\js\D3_4_jsonAndEvents.js" />
+    <Content Include="dashboard\js\D3_5_LinePlot.js" />
+    <Content Include="dashboard\js\jquery-2.2.0.js" />
+    <Content Include="dashboard\js\jquery-2.2.0.min.js" />
+    <Content Include="dashboard\js\jquery.rwdImageMaps.js" />
+    <Content Include="dashboard\js\jquery.rwdImageMaps.min.js" />
+    <Content Include="dashboard\js\jquery_use.js" />
+    <Content Include="dashboard\js\navigation.js" />
     <Content Include="zajecia\js\bootstrap.js" />
     <Content Include="zajecia\js\bootstrap.min.js" />
     <Content Include="zajecia\js\d3.js" />
@@ -88,6 +110,13 @@
     <None Include="4. JPK_VAT%281%29_v2-2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="dashboard\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="dashboard\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="dashboard\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="dashboard\data\linePlot.json" />
+    <Content Include="dashboard\data\rawData.json" />
+    <Content Include="dashboard\css\bootstrap-theme.css.map" />
+    <Content Include="dashboard\css\bootstrap.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,13 +135,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="dashboard\css\" />
-    <Folder Include="dashboard\data\" />
-    <Folder Include="dashboard\fonts\" />
-    <Folder Include="dashboard\img\" />
-    <Folder Include="dashboard\js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

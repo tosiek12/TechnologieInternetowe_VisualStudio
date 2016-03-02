@@ -1,0 +1,11 @@
+{
+    "people":[
+        {"name": "Antoni","age":5},
+        {"name": "Magdalena","age":10},
+        {"name": "Tomek","age":15},
+        {"name": "Bartek","age":20},
+        {"name": "Arek","age":3}
+        ],
+    "reportType":"Names and age raport"
+}
+
