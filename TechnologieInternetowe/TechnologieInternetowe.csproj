@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dashboard\favicon.ico" />
+    <Content Include="dashboard\heinecen_all_item.aspx" />
     <Content Include="dashboard\index.html" />
     <Content Include="zajecia\js\bootstrap.js" />
     <Content Include="zajecia\js\bootstrap.min.js" />
@@ -83,6 +85,9 @@
     <Content Include="zajecia\js\jquery_use.js" />
     <Content Include="zajecia\js\navigation.js" />
     <Content Include="packages.config" />
+    <None Include="4. JPK_VAT%281%29_v2-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -101,7 +106,13 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="dashboard\css\" />
+    <Folder Include="dashboard\data\" />
+    <Folder Include="dashboard\fonts\" />
+    <Folder Include="dashboard\img\" />
+    <Folder Include="dashboard\js\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
