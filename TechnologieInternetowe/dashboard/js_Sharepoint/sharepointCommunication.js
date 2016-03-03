@@ -48,6 +48,9 @@ function getListItem(url, listname, id, fields) {
         url: address,
         method: "GET",
         crossDomain: true,
+        xhrFields: {
+            withCredentials: true
+        },
         headers: { "Accept": "application/json; odata=verbose" },
         success: function (data) {
 
@@ -80,7 +83,24 @@ function testSPobj() {
     };
 }
 
+
+
 function ajaxTest() {
+    $.ajax({
+        type: "POST",
+        url: "http://trirand.com/blog/phpjqgrid/examples/jsonp/getjsonp.php?callback=?&qwery=longorders",
+        datatype: "jsonp",
+        success: function (resp) {
+            console.log("GET google:", resp);
+        },
+        error: function () {
+            alert("error in get google");
+        }
+    });
+
+}
+
+function ajaxTest2() {
     $.ajax({
         type: "GET",
         url: "https://maps.googleapis.com/maps/api/geocode/xml?sensor=false&address=Krakow",

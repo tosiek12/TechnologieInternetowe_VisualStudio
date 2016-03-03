@@ -538,9 +538,9 @@ All Items
 	type="text/javascript"></script>
 <script src="https://hgss365.sharepoint.com/sites/hgss/ARC-CustomView-Resources/js/jquery.SPServices-0.7.1a.js"
 	type="text/javascript"></script>
-<script src="https://hgss365.sharepoint.com/sites/hgss/ARC-CustomView-Resources/js/trirand/jquery.jqGrid.src.js"
+<script src="https://hgss365.sharepoint.com/sites/hgss/ARC-CustomView-Resources/js/jqGrid/jquery.jqGrid.src.js"
 	type="text/javascript"></script>
-<script src="https://hgss365.sharepoint.com/sites/hgss/ARC-CustomView-Resources/js/trirand/i18n/grid.locale-en.js"
+<script src="https://hgss365.sharepoint.com/sites/hgss/ARC-CustomView-Resources/js/jqGrid/i18n/grid.locale-en.js"
 	type="text/javascript"></script>
  <script src="https://hgss365.sharepoint.com/sites/hgss/ARC-CustomView-Resources/js/jquery-ui-timepicker-addon.js"
 	type="text/javascript"></script>
@@ -1606,7 +1606,7 @@ function loadData(click){
 
                 next=$(xData.responseXML).SPFilterNode("rs:data").attr("ListItemCollectionPositionNext");
                 try{
-                    next = next.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                    next = next.replace(/&/g,'&amp;').replace(/"/g,'"').replace(/</g,'&lt;').replace(/>/g,'&gt;');
                 }
                 catch(e){
                 }			
@@ -1770,7 +1770,7 @@ function loadData(click){
 
                         next=$(xData.responseXML).SPFilterNode("rs:data").attr("ListItemCollectionPositionNext");
                         try{
-                            next = next.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                            next = next.replace(/&/g,'&amp;').replace(/"/g,'"').replace(/</g,'&lt;').replace(/>/g,'&gt;');
                         }
                         catch(e){
                         }			
@@ -1887,7 +1887,7 @@ function loadData(click){
 
                         prev=$(xData.responseXML).SPFilterNode("rs:data").attr("ListItemCollectionPositionNext");
                         try{
-                            prev = prev.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                            prev = prev.replace(/&/g,'&amp;').replace(/"/g,'"').replace(/</g,'&lt;').replace(/>/g,'&gt;');
                         }
                         catch(e){
                         }			
@@ -1930,7 +1930,7 @@ function loadData(click){
 
                                             prev=$(xData.responseXML).SPFilterNode("rs:data").attr("ListItemCollectionPositionNext");
                                             try{
-                                                prev = prev.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                                                prev = prev.replace(/&/g,'&amp;').replace(/"/g,'"').replace(/</g,'&lt;').replace(/>/g,'&gt;');
                                             }
                                             catch(e){
                                             }			            
@@ -3277,7 +3277,7 @@ function pageGetMan(evt){
         fld = fld.replace(/&/gi,"&amp;");
         fld = fld.replace(/</gi,"&lt;");
         fld = fld.replace(/>/gi,"&gt;");
-        fld = fld.replace(/\"/gi,"&quot;");
+        fld = fld.replace(/\"/gi,""");
 	
         return fld;
     }
