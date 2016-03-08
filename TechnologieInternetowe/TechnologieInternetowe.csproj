@@ -189,6 +189,7 @@
     <Content Include="zajecia\gory.html" />
     <Content Include="zajecia\grafika.jpg" />
     <Content Include="zajecia\index.html" />
+    <Content Include="zajecia\js\zajecia.js" />
     <Content Include="zajecia\style.css" />
     <Content Include="zajecia\table.html" />
     <Content Include="Web.config" />
