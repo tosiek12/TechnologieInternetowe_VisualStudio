@@ -5,6 +5,7 @@
         elems[i].setAttribute('bgcolor', '#00FF00');
     }
 };
+
 function dodajObraz() {
     var elem = document.getElementById("wstaw");
     elem.innerHTML = "<h1>tst</h1>";

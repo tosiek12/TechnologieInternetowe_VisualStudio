@@ -55,22 +55,48 @@
                 </tr>
             </table>
         </div>
+        <div class="pole" id="flash">
+            <p>This will flash!</p>
+        </div>
 
+        <script type="text/javascript">
+            window.onload = (function () {
+                console.log('finished');
+                setInterval('flash()', 500);
 
+            });
+
+            function flash() {
+                var elems = document.getElementsByClassName("pole");
+                r = Math.round(Math.random() * 255);
+                g = Math.round(Math.random() * 255);
+                b = Math.round(Math.random() * 255);
+                console.log('flash');
+
+                for (var i = 0; i < elems.length; i++) {
+                    //elems[i].setAttribute('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
+                    elems[i].style.backgroundColor = ('rgb(' + r + ',' + g + ',' + b + ')');
+                }
+            };
+        </script>
 	</body>
-
-
 </html>
 <!--
-	Todo:
-	1) rozwijane menu -> lista list + w css format
-    	http://www.w3schools.com/css/css_navbar.asp
-	2) tabelki usuwanie np. border, scalanie, kolorowanie elmentow etc.
+    Todo:
+    1) rozwijane menu -> lista list + w css format
+        http://www.w3schools.com/css/css_navbar.asp
+    2) tabelki usuwanie np. border, scalanie, kolorowanie elmentow etc.
 
-	Poszukac:
-	1) roznice html5 vs xtml
-	2) roznice css vs css3
-	nastepne:
-	1) css + js
+    Poszukac:
+    1) roznice html5 vs xtml
+    2) roznice css vs css3
+    nastepne:
+    1) css + js
+
+    ----
+    wygenerowaæ kilka elementów,
+    zrobic jakis ruch ich i zale¿losci
 
 -->
+
+
