@@ -63,7 +63,6 @@
             window.onload = (function () {
                 console.log('finished');
                 setInterval('flash()', 500);
-
             });
 
             function flash() {
@@ -72,15 +71,17 @@
                 g = Math.round(Math.random() * 255);
                 b = Math.round(Math.random() * 255);
                 console.log('flash');
-
                 for (var i = 0; i < elems.length; i++) {
                     //elems[i].setAttribute('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
                     elems[i].style.backgroundColor = ('rgb(' + r + ',' + g + ',' + b + ')');
+                    elems[i].style.top = '40px' + Math.round(Math.random() * 50);
+                    elems[i].style.left=  40 + Math.round(Math.random() * 50) + 'px';
                 }
             };
         </script>
 	</body>
 </html>
+
 <!--
     Todo:
     1) rozwijane menu -> lista list + w css format
