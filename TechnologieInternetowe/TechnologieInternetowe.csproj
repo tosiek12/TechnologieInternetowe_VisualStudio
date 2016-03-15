@@ -149,6 +149,7 @@
     <Content Include="dashboard\js_SPServices\jquery.SPServices-2014.02.min.js" />
     <Content Include="dashboard\js_SPServices\license.txt" />
     <Content Include="index.html" />
+    <None Include="zajecia\data\Fields.json" />
     <Content Include="zajecia\js\bootstrap.js" />
     <Content Include="zajecia\js\bootstrap.min.js" />
     <Content Include="zajecia\js\d3.js" />
@@ -160,6 +161,7 @@
     <Content Include="zajecia\js\D3_5_LinePlot.js" />
     <Content Include="zajecia\js\jquery-2.2.0.js" />
     <Content Include="zajecia\js\jquery-2.2.0.min.js" />
+    <Content Include="zajecia\js\jquery.dform-1.1.0.js" />
     <Content Include="zajecia\js\jquery.rwdImageMaps.js" />
     <Content Include="zajecia\js\jquery.rwdImageMaps.min.js" />
     <Content Include="zajecia\js\jquery_use.js" />
@@ -191,6 +193,7 @@
     <Content Include="zajecia\index.html" />
     <Content Include="zajecia\js\zajecia.js" />
     <Content Include="zajecia\style.css" />
+    <Content Include="zajecia\generowanie.html" />
     <Content Include="zajecia\table.html" />
     <Content Include="Web.config" />
   </ItemGroup>

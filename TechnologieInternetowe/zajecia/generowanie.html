@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title> Obrazek </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="js/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="js/zajecia.js"></script>
+        <script type="text/javascript" src="js/jquery.dform-1.1.0.js"></script>
+	</head>
+
+	<body>
+        <h1> Test web page</h1>
+		 <nav  >
+           <ul>
+               <li><a class="dropbtn" href="index.html">Glowna</a></li>
+               <li><a class="dropbtn" href="gory.html">Obrazek</a></li>
+               <li class="dropdown">
+                   <a class="dropbtn" href="table.html">Tablica</a>
+                   <div class="dropdown-content">
+                       <a href="#" onclick="koloruj()">Koloruj Pasma</a>
+                       <a href="#" onclick="dodajObraz()">DodajObraz</a>
+                   </div>
+               </li>
+               <li><a class="dropbtn" href="generowanie.html">generowanie</a></li>
+           </ul>
+		</nav>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="wstaw">
+
+        </div>
+
+        <script type="text/javascript">
+            $(function() {
+              // Generate a form
+                $("#myform").dform({
+                    "action" : "generowanie.html",
+                    "method" : "get",
+                    "html" :
+                    [
+                        {
+                            "type" : "p",
+                            "html" : "You must login"
+                        },
+                        {
+                            "name" : "username",
+                            "id" : "txt-username",
+                            "caption" : "Username",
+                            "type" : "text",
+                            "placeholder" : "E.g. user@example.com"
+                        },
+                        {
+                            "name" : "password",
+                            "caption" : "Password",
+                            "type" : "password"
+                        },
+                        {
+                            "type" : "submit",
+                            "value" : "Login"
+                        }
+                    ]
+                });
+            });
+        </script>
+        <form id="myform"></form>
+        <div id="moj-form">
+
+        </div>
+        <div class="pole" id="flash">
+            <p>This will flash!</p>
+        </div>
+
+        <script type="text/javascript">
+            window.onload = (function () {
+                console.log('finished');
+
+                $('moj-form').dform(
+                loadItems();
+                setInterval('flash()', 500);
+            });
+
+            function loadItems() {
+                var tab = $.getJSON('data/Fields.json', function (data) {
+                    console.log(data);
+                });
+            };
+
+            function flash() {
+                var elems = document.getElementsByClassName("pole");
+                r = Math.round(Math.random() * 255);
+                g = Math.round(Math.random() * 255);
+                b = Math.round(Math.random() * 255);
+                console.log('flash');
+                for (var i = 0; i < elems.length; i++) {
+                    //elems[i].setAttribute('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
+                    elems[i].style.backgroundColor = ('rgb(' + r + ',' + g + ',' + b + ')');
+                    elems[i].style.top = '40px' + Math.round(Math.random() * 50);
+                    elems[i].style.left=  40 + Math.round(Math.random() * 50) + 'px';
+                }
+            };
+        </script>
+	</body>
+</html>
+
+<!--
+    Todo:
+    1) rozwijane menu -> lista list + w css format
+        http://www.w3schools.com/css/css_navbar.asp
+    2) tabelki usuwanie np. border, scalanie, kolorowanie elmentow etc.
+
+    Poszukac:
+    1) roznice html5 vs xtml
+    2) roznice css vs css3
+    nastepne:
+    1) css + js
+
+    ----
+    wygenerowaæ kilka elementów,
+    zrobic jakis ruch ich i zale¿losci
+
+-->
+
+
