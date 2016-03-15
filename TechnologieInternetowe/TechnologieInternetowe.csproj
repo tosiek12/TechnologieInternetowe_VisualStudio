@@ -148,6 +148,7 @@
     <Content Include="dashboard\js_SPServices\jquery.SPServices-2014.02.js" />
     <Content Include="dashboard\js_SPServices\jquery.SPServices-2014.02.min.js" />
     <Content Include="dashboard\js_SPServices\license.txt" />
+    <Content Include="dashboard\mainWeb.aspx" />
     <Content Include="index.html" />
     <None Include="Properties\PublishProfiles\Z - SP virtual Drive .pubxml" />
     <None Include="zajecia\data\Fields.json" />
