@@ -78,6 +78,7 @@
     <Content Include="dashboard\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="dashboard\heinecen_all_item.aspx" />
     <Content Include="dashboard\img\swimlane_flowchart.png" />
+    <Content Include="dashboard\instruction.txt" />
     <Content Include="dashboard\jqGrid_test.aspx" />
     <Content Include="dashboard\index.aspx" />
     <Content Include="dashboard\js\bootstrap.js" />
@@ -149,7 +150,6 @@
     <Content Include="dashboard\js_SPServices\jquery.SPServices-2014.02.min.js" />
     <Content Include="dashboard\js_SPServices\license.txt" />
     <Content Include="dashboard\mainWeb.aspx" />
-    <Content Include="index.html" />
     <None Include="Properties\PublishProfiles\Z - SP virtual Drive .pubxml" />
     <None Include="zajecia\data\Fields.json" />
     <Content Include="zajecia\js\bootstrap.js" />

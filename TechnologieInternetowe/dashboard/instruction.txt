@@ -1,0 +1,4 @@
+﻿Map as Z:// folder on my SP:
+https://arcconsulting365.sharepoint.com/sites/dev_at/testEnv/SitePages/Dashboard/
+
+Publish web page!
