@@ -1,6 +1,17 @@
 {
-  "Name": "Imie",
-  "test": 0,
-  "reportType":"Names and age raport"
+  "circles": [
+    {
+      "x": 30,
+      "y": 30,
+      "r": 50,
+      "color": "blue"
+    },
+    {
+      "x": 80,
+      "y": 80,
+      "r": 50,
+      "color": "red"
+    }
+  ]
 }
 
