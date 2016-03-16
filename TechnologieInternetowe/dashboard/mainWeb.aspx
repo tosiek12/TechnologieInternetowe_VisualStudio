@@ -48,6 +48,4 @@ function onQueryFailed(sender, args) {
     <p><span id="userEmail"></span></p>
 </div>
 
-
-
 </asp:Content>

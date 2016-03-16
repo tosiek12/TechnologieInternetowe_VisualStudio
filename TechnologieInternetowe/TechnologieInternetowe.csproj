@@ -144,7 +144,6 @@
     <Content Include="dashboard\jqGrid\js\install.txt" />
     <Content Include="dashboard\jqGrid\js\jquery-1.11.0.min.js" />
     <Content Include="dashboard\jqGrid\js\jquery.jqGrid.min.js" />
-    <Content Include="dashboard\js_Sharepoint\sharepointAuthentication.js" />
     <Content Include="dashboard\js_Sharepoint\sharepointCommunication.js" />
     <Content Include="dashboard\js_SPServices\jquery.SPServices-2014.02.js" />
     <Content Include="dashboard\js_SPServices\jquery.SPServices-2014.02.min.js" />

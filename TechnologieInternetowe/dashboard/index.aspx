@@ -20,7 +20,6 @@ and open the template in the editor.
         <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js_Sharepoint/sharepointCommunication.js"></script>
-        <script type="text/javascript" src="js_Sharepoint/sharepointAuthentication.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top" id="myNavBar">
@@ -239,18 +238,15 @@ and open the template in the editor.
         <script src="js/jquery.rwdImageMaps.js"></script>
         <script>
             $(document).ready(function (e) {
-                startScript();
 
                 $('img[usemap]').rwdImageMaps();
-
                 $('area').on('click', function () {
                     alert($(this).attr('alt') + ' clicked');
                 });
 
+
                 // div#tree2
                 testReceiving();
-
-                ajaxTest();
 
             });
 
