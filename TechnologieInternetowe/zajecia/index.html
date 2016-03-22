@@ -7,24 +7,16 @@
 
         <script src="js/jquery-2.2.0.min.js"></script>
 	</head>
-
 	<body>
         <h1>Test web page</h1>
-        <nav>
-            <ul>
-                <li><a class="dropbtn" href="index.html">Glowna</a></li>
-                <li><a class="dropbtn" href="gory.html">Obrazek</a></li>
-                <li class="dropdown">
-                    <a class="dropbtn" href="table.html">Tablica</a>
-                    <div class="dropdown-content">
-                        <a href="#" onclick="koloruj()">Koloruj Pasma</a>
-                        <a href="#" onclick="dodajObraz()">DodajObraz</a>
-                    </div>
-                </li>
-            </ul>
-        </nav> 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</body>
+        <form action="welcome_post.php" method="post">
+            Name: <input type="text" name="name"><br>
+            E-mail: <input type="text" name="email"><br>
+            <input type="submit">
+        </form>
+    
+    </body>
 
 
 </html>
