@@ -1,0 +1,25 @@
+﻿<!--
+	Todo:
+    http://www.w3schools.com/css/css_navbar.asp
+    
+	Poszukac:
+	1) roznice html5 vs xtml
+	2) roznice css vs css3
+	nastepne:
+	1) css + js
+
+-->
+
+
+Interaktywna strona z zmiana wygladu w zaleznosci od akcji uzytkownika w czasie sesji,
+
+gromadzenie danych o uzytkownikach:
+ip,
+komputer,
+space,
+czas
+
+pisanie opini np. tylko po zalogowaniu,
+
+
+2 widoki -> urzadzenie mobilne/stacjonarne
