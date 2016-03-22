@@ -151,8 +151,10 @@
     <Content Include="dashboard\mainWeb.aspx" />
     <None Include="Properties\PublishProfiles\Z - SP virtual Drive .pubxml" />
     <None Include="zajecia\data\Fields.json" />
+    <Content Include="zajecia\opis zadan.txt" />
     <Content Include="zajecia\template.php" />
     <Content Include="zajecia\index.php" />
+    <Content Include="zajecia\saveUserData.php" />
     <None Include="zajecia\welcome_post.php" />
     <None Include="zajecia\menu.php" />
     <Content Include="zajecia\js\bootstrap.js" />

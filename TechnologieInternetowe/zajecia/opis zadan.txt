@@ -10,7 +10,6 @@
 
 -->
 
-
 Interaktywna strona z zmiana wygladu w zaleznosci od akcji uzytkownika w czasie sesji,
 
 gromadzenie danych o uzytkownikach:
