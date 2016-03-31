@@ -155,6 +155,18 @@
     <Content Include="zajecia\template.php" />
     <Content Include="zajecia\index.php" />
     <Content Include="zajecia\saveUserData.php" />
+    <Content Include="zajecia\MVC\controller\controller.php" />
+    <Content Include="zajecia\MVC\model\model.php" />
+    <Content Include="zajecia\MVC\view\view.php" />
+    <Content Include="zajecia\MVC\config\sql.php" />
+    <Content Include="zajecia\MVC\index.php" />
+    <Content Include="zajecia\MVC\controller\categories.php" />
+    <Content Include="zajecia\MVC\model\categories.php" />
+    <Content Include="zajecia\MVC\view\categories.php" />
+    <Content Include="zajecia\MVC\templates\header.html.php" />
+    <Content Include="zajecia\MVC\templates\indexCategory.html.php" />
+    <Content Include="zajecia\MVC\templates\footer.html.php" />
+    <Content Include="zajecia\MVC\templates\addCategory.html.php" />
     <None Include="zajecia\welcome_post.php" />
     <None Include="zajecia\menu.php" />
     <Content Include="zajecia\js\bootstrap.js" />
@@ -174,9 +186,6 @@
     <Content Include="zajecia\js\jquery_use.js" />
     <Content Include="zajecia\js\navigation.js" />
     <Content Include="packages.config" />
-    <None Include="4. JPK_VAT%281%29_v2-2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <Content Include="dashboard\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="dashboard\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="dashboard\fonts\glyphicons-halflings-regular.woff" />
