@@ -1,6 +1,6 @@
 /**
  * jqGrid Catalan Translation
- * Traducció jqGrid en Catatà per Faserline, S.L.
+ * Traduccio jqGrid en Catatà per Faserline, S.L.
  * http://www.faserline.com
  * Dual licensed under the MIT and GPL licenses:
  * http://www.opensource.org/licenses/mit-license.php
@@ -71,7 +71,7 @@ $.jgrid.regional["ca"] = {
 		    number:"Introdueixi un nombre",
 		    minValue:"El valor ha de ser major o igual que ",
 		    maxValue:"El valor ha de ser menor o igual a ",
-		    email: "no és una direcció de correu vàlida",
+		    email: "no és una direccio de correu vàlida",
 		    integer: "Introdueixi un valor enter",
 			date: "Introdueixi una data correcta ",
 			url: "no és una URL vàlida. Prefix requerit ('http://' or 'https://')",
@@ -99,7 +99,7 @@ $.jgrid.regional["ca"] = {
 		deltext: " ",
 		deltitle: "Eliminar fila seleccionada",
 		searchtext: " ",
-		searchtitle: "Cercar informació",
+		searchtitle: "Cercar informacio",
 		refreshtext: "",
 		refreshtitle: "Refrescar taula",
 		alertcap: "Avís",
@@ -122,7 +122,7 @@ $.jgrid.regional["ca"] = {
 		errcap : "Error",
 		nourl : "No s'ha especificat una URL",
 		norecords: "No hi ha dades per processar",
-		model : "Les columnes de noms són diferents de les columnes del model"
+		model : "Les columnes de noms son diferents de les columnes del model"
 	},
 	formatter : {
 		integer : {thousandsSeparator: ".", defaultValue: '0'},

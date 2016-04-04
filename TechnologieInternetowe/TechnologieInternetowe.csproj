@@ -151,6 +151,7 @@
     <Content Include="dashboard\mainWeb.aspx" />
     <None Include="Properties\PublishProfiles\Z - SP virtual Drive .pubxml" />
     <None Include="zajecia\data\Fields.json" />
+    <Content Include="zajecia\MVC\js\jquery-2.2.0.min.js" />
     <Content Include="zajecia\opis zadan.txt" />
     <Content Include="zajecia\template.php" />
     <Content Include="zajecia\index.php" />
@@ -226,9 +227,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="zajecia\MVC\js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

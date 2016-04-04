@@ -76,8 +76,8 @@ $.jgrid.regional["gl"] = {
 			url: "non é unha URL válida. Prefixo requerido ('http://' ou 'https://')",
 			nodefined : " non está definido.",
 			novalue : " o valor de retorno é obrigatorio.",
-			customarray : "A función persoalizada debe devolver un array.",
-			customfcheck : "A función persoalizada debe estar presente no caso de ter validación persoalizada."
+			customarray : "A funcion persoalizada debe devolver un array.",
+			customfcheck : "A funcion persoalizada debe estar presente no caso de ter validacion persoalizada."
 		}
 	},
 	view : {
@@ -98,7 +98,7 @@ $.jgrid.regional["gl"] = {
 	    deltext: " ",
 	    deltitle: "Eliminar a fila seleccionada",
 	    searchtext: " ",
-	    searchtitle: "Buscar información",
+	    searchtitle: "Buscar informacion",
 	    refreshtext: "",
 	    refreshtitle: "Recargar datos",
 	    alertcap: "Aviso",

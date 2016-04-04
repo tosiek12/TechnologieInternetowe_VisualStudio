@@ -3299,7 +3299,7 @@ function prepareFields(lstGridAll){
 					
 						var fldNameTmp = lstGridAll[z].substring(0,lstGridAll[z].indexOf("[lstFld]"));
 						
-						//pobieranie długości pól
+						//pobieranie dlugosci pol
 						if(typeof fieldsWidths != 'undefined' && fieldsWidths.length != 0){
 							var widthPlc = array_search(fldNameTmp,fieldsList);
 							if(widthPlc !== false){

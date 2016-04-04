@@ -1,11 +1,11 @@
 ﻿<? include 'templates/header.html.php'; ?>
  
-<h1>Dodaj artykuł</h1>
+<h1>Dodaj artykul</h1>
 <form action="?task=articles&amp;action=insert" method="post">
-    Tytuł: <input type="text" name="title" /><br />
+    Tytul: <input type="text" name="title" /><br />
     Autor: <input type="text" name="author" /><br />
     Data dodania: <input type="text" name="date_add" value="<?= date("Y:m:d"); ?>" /><br />
-    Treść:<br />
+    Tresc:<br />
     <textarea name="content"></textarea><br />
     Kategoria: <select name="cat" size="0">
         <? foreach($this->get('catsData') as $cats) { ?>

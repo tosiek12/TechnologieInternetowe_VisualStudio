@@ -1,10 +1,10 @@
 /**
  * jqGrid Polish Translation
- * Łukasz Schab lukasz@freetree.pl
+ * lukasz Schab lukasz@freetree.pl
  * http://FreeTree.pl
  *
  * Updated names, abbreviations, currency and date/time formats for Polish norms (also corresponding with CLDR v21.0.1 --> http://cldr.unicode.org/index) 
- * Tomasz Pęczek tpeczek@gmail.com
+ * Tomasz Peczek tpeczek@gmail.com
  * http://tpeczek.blogspot.com; http://tpeczek.codeplex.com
  *
  * Dual licensed under the MIT and GPL licenses:
@@ -33,8 +33,8 @@ if(!$.jgrid.hasOwnProperty("regional")) {
 $.jgrid.regional["pl"] = {
 	defaults : {
 		recordtext: "Pokaż {0} - {1} z {2}",
-		emptyrecords: "Brak rekordów do pokazania",
-		loadtext: "Ładowanie...",
+		emptyrecords: "Brak rekordow do pokazania",
+		loadtext: "ladowanie...",
 		pgtext : "Strona {0} z {1}",
 		savetext: "Saving...",
 		pgfirst : "First Page",
@@ -55,8 +55,8 @@ $.jgrid.regional["pl"] = {
 	search : {
 		caption: "Wyszukiwanie...",
 		Find: "Szukaj",
-		Reset: "Czyść",
-		odata: [{ oper:'eq', text:"dokładnie"},{ oper:'ne', text:"różne od"},{ oper:'lt', text:"mniejsze od"},{ oper:'le', text:"mniejsze lub równe"},{ oper:'gt', text:"większe od"},{ oper:'ge', text:"większe lub równe"},{ oper:'bw', text:"zaczyna się od"},{ oper:'bn', text:"nie zaczyna się od"},{ oper:'in', text:"jest w"},{ oper:'ni', text:"nie jest w"},{ oper:'ew', text:"kończy się na"},{ oper:'en', text:"nie kończy się na"},{ oper:'cn', text:"zawiera"},{ oper:'nc', text:"nie zawiera"},{ oper:'nu', text:'is null'},{ oper:'nn', text:'is not null'}, {oper:'bt', text:'between'}],
+		Reset: "Czysc",
+		odata: [{ oper:'eq', text:"dokladnie"},{ oper:'ne', text:"rożne od"},{ oper:'lt', text:"mniejsze od"},{ oper:'le', text:"mniejsze lub rowne"},{ oper:'gt', text:"wieksze od"},{ oper:'ge', text:"wieksze lub rowne"},{ oper:'bw', text:"zaczyna sie od"},{ oper:'bn', text:"nie zaczyna sie od"},{ oper:'in', text:"jest w"},{ oper:'ni', text:"nie jest w"},{ oper:'ew', text:"kończy sie na"},{ oper:'en', text:"nie kończy sie na"},{ oper:'cn', text:"zawiera"},{ oper:'nc', text:"nie zawiera"},{ oper:'nu', text:'is null'},{ oper:'nn', text:'is not null'}, {oper:'bt', text:'between'}],
 		groupOps: [	{ op: "AND", text: "oraz" },	{ op: "OR",  text: "lub" }	],
 		operandTitle : "Click to select search operation.",
 		resetTitle : "Reset Search Value"
@@ -67,23 +67,23 @@ $.jgrid.regional["pl"] = {
 		bSubmit: "Zapisz",
 		bCancel: "Anuluj",
 		bClose: "Zamknij",
-		saveData: "Dane zostały zmienione! Zapisać zmiany?",
+		saveData: "Dane zostaly zmienione! Zapisac zmiany?",
 		bYes: "Tak",
 		bNo: "Nie",
 		bExit: "Anuluj",
 		msg: {
 			required: "Pole jest wymagane",
-			number: "Proszę wpisać poprawną liczbę",
-			minValue: "wartość musi być większa lub równa od",
-			maxValue: "wartość musi być mniejsza lub równa od",
+			number: "Prosze wpisac poprawną liczbe",
+			minValue: "wartosc musi byc wieksza lub rowna od",
+			maxValue: "wartosc musi byc mniejsza lub rowna od",
 			email: "nie jest poprawnym adresem e-mail",
-			integer: "Proszę wpisać poprawną liczbę",
-			date: "Proszę podaj poprawną datę",
-			url: "jest niewłaściwym adresem URL. Pamiętaj o prefiksie ('http://' lub 'https://')",
+			integer: "Prosze wpisac poprawną liczbe",
+			date: "Prosze podaj poprawną date",
+			url: "jest niewlasciwym adresem URL. Pamietaj o prefiksie ('http://' lub 'https://')",
 			nodefined: " niezdefiniowane!",
-			novalue: " wymagana jest wartość zwracana!",
-			customarray: "Funkcja niestandardowa powinna zwracać tablicę!",
-			customfcheck: "Funkcja niestandardowa powinna być obecna w przypadku niestandardowego sprawdzania!"
+			novalue: " wymagana jest wartosc zwracana!",
+			customarray: "Funkcja niestandardowa powinna zwracac tablice!",
+			customfcheck: "Funkcja niestandardowa powinna byc obecna w przypadku niestandardowego sprawdzania!"
 		}
 	},
 	view : {
@@ -92,7 +92,7 @@ $.jgrid.regional["pl"] = {
 	},
 	del : {
 		caption: "Usuń",
-		msg: "Czy usunąć wybrany rekord(y)?",
+		msg: "Czy usunąc wybrany rekord(y)?",
 		bSubmit: "Usuń",
 		bCancel: "Anuluj"
 	},
@@ -106,9 +106,9 @@ $.jgrid.regional["pl"] = {
 		searchtext: "",
 		searchtitle: "Wyszukaj rekord",
 		refreshtext: "",
-		refreshtitle: "Przeładuj",
+		refreshtitle: "Przeladuj",
 		alertcap: "Uwaga",
-		alerttext: "Proszę wybrać wiersz",
+		alerttext: "Prosze wybrac wiersz",
 		viewtext: "",
 		viewtitle: "Pokaż wybrany wiersz",
 		savetext: "",
@@ -123,19 +123,19 @@ $.jgrid.regional["pl"] = {
 		bCancel: "Anuluj"
 	},
 	errors : {
-		errcap: "Błąd",
+		errcap: "Bląd",
 		nourl: "Brak adresu url",
 		norecords: "Brak danych",
-		model : "Długość colNames <> colModel!"
+		model : "Dlugosc colNames <> colModel!"
 	},
 	formatter : {
 		integer : {thousandsSeparator: " ", defaultValue: '0'},
 		number : {decimalSeparator:",", thousandsSeparator: " ", decimalPlaces: 2, defaultValue: '0,00'},
-		currency : {decimalSeparator:",", thousandsSeparator: " ", decimalPlaces: 2, prefix: "", suffix:" zł", defaultValue: '0,00'},
+		currency : {decimalSeparator:",", thousandsSeparator: " ", decimalPlaces: 2, prefix: "", suffix:" zl", defaultValue: '0,00'},
 		date : {
 			dayNames:   [
-				"niedz.", "pon.", "wt.", "śr.", "czw.", "pt.", "sob.",
-				"niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota"
+				"niedz.", "pon.", "wt.", "sr.", "czw.", "pt.", "sob.",
+				"niedziela", "poniedzialek", "wtorek", "sroda", "czwartek", "piątek", "sobota"
 			],
 			monthNames: [
 				"sty", "lut", "mar", "kwi", "maj", "cze", "lip", "sie", "wrz", "paź", "lis", "gru",

@@ -118,7 +118,7 @@ $.jgrid.regional["is"] = {
 	},
 	errors : {
 		errcap : "Villa",
-		nourl : "Vantar slóð",
+		nourl : "Vantar sloð",
 		norecords: "Engar færslur valdar",
 	    model : "Lengd colNames <> colModel!"
 	},
@@ -132,8 +132,8 @@ $.jgrid.regional["is"] = {
 				"Sunnudagur", "Mánudagur", "Þriðjudagur", "Miðvikudagur", "Fimmtudagur", "Föstudagur", "Laugardagur"
 			],
 			monthNames: [
-				"Jan", "Feb", "Mar", "Apr", "Maí", "Jún", "Júl", "Ágú", "Sep", "Oct", "Nóv", "Des",
-				"Janúar", "Febrúar", "Mars", "Apríl", "Maí", "Júný", "Júlý", "Ágúst", "September", "Október", "Nóvember", "Desember"
+				"Jan", "Feb", "Mar", "Apr", "Maí", "Jún", "Júl", "Ágú", "Sep", "Oct", "Nov", "Des",
+				"Janúar", "Febrúar", "Mars", "Apríl", "Maí", "Júný", "Júlý", "Ágúst", "September", "Oktober", "November", "Desember"
 			],
 			AmPm : ["am","pm","AM","PM"],
 			S: function (j) {return j < 11 || j > 13 ? ['st', 'nd', 'rd', 'th'][Math.min((j - 1) % 10, 3)] : 'th'},

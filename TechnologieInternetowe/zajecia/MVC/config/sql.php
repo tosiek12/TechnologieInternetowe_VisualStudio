@@ -9,5 +9,4 @@
   $user='atrad';
   $pass='GSnx6QgH';
   
- 
 ?>

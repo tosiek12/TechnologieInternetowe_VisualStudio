@@ -43,7 +43,7 @@ $.jgrid.regional["pt-br"] = {
 		savetext: "Salvando...",
 		pgfirst : "Primeira Página",
 		pglast : "Última Página",
-		pgnext : "Próxima Página",
+		pgnext : "Proxima Página",
 		pgprev : "Página Anterior",
 		pgrecs : "Registros por Página",
 		showhide: "Mostrar/Ocultar Grid",
@@ -76,16 +76,16 @@ $.jgrid.regional["pt-br"] = {
 		bNo : "Não",
 		bExit : "Cancelar",
 	    msg: {
-	        required:"Campo obrigatório",
+	        required:"Campo obrigatorio",
 	        number:"Por favor, informe um número válido",
 	        minValue:"valor deve ser igual ou maior que ",
 	        maxValue:"valor deve ser menor ou igual a",
 	        email: "este e-mail não é válido",
 	        integer: "Por favor, informe um valor inteiro",
 			date: "Por favor, informe uma data válida",
-			url: "não é uma URL válida. Prefixo obrigatório ('http://' or 'https://')",
+			url: "não é uma URL válida. Prefixo obrigatorio ('http://' or 'https://')",
 			nodefined : " não está definido!",
-			novalue : " um valor de retorno é obrigatório!",
+			novalue : " um valor de retorno é obrigatorio!",
 			customarray : "Função customizada deve retornar um array!",
 			customfcheck : "Função customizada deve estar presente em caso de validação customizada!"
 		}

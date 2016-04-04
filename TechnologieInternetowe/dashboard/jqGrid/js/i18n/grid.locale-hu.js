@@ -122,7 +122,7 @@ $.jgrid.regional["hu"] = {
 	errors : {
 		errcap : "Hiba",
 		nourl : "Nincs URL beállítva",
-		norecords: "Nincs feldolgozásra váró tétel",
+		norecords: "Nincs feldolgozásra váro tétel",
 		model : "colNames és colModel hossza nem egyenlő!"
 	},
 	formatter : {
@@ -136,7 +136,7 @@ $.jgrid.regional["hu"] = {
 			],
 			monthNames: [
 				"Jan", "Feb", "Már", "Ápr", "Máj", "Jún", "Júl", "Aug", "Szep", "Okt", "Nov", "Dec",
-				"Január", "Február", "Március", "Áprili", "Május", "Június", "Július", "Augusztus", "Szeptember", "Október", "November", "December"
+				"Január", "Február", "Március", "Áprili", "Május", "Június", "Július", "Augusztus", "Szeptember", "Oktober", "November", "December"
 			],
 			AmPm : ["de","du","DE","DU"],
 			S: function (j) {return '.-ik';},
@@ -147,7 +147,7 @@ $.jgrid.regional["hu"] = {
 				ISO8601Long:"Y-m-d H:i:s",
 				ISO8601Short:"Y-m-d",
 				ShortDate: "Y/j/n",
-				LongDate: "Y. F hó d., l",
+				LongDate: "Y. F ho d., l",
 				FullDateTime: "l, F d, Y g:i:s A",
 				MonthDay: "F d",
 				ShortTime: "a g:i",

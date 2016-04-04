@@ -51,7 +51,7 @@ $.jgrid.regional["me"] = {
 		caption: "Traženje...",
 		Find: "Traži",
 		Reset: "Resetuj",
-		odata: [{ oper:'eq', text:"jednako"},{ oper:'ne', text:"nije jednako"},{ oper:'lt', text:"manje"},{ oper:'le', text:"manje ili jednako"},{ oper:'gt', text:"veće"},{ oper:'ge', text:"veće ili jednako"},{ oper:'bw', text:"počinje sa"},{ oper:'bn', text:"ne počinje sa"},{ oper:'in', text:"je u"},{ oper:'ni', text:"nije u"},{ oper:'ew', text:"završava sa"},{ oper:'en', text:"ne završava sa"},{ oper:'cn', text:"sadrži"},{ oper:'nc', text:"ne sadrži"},{ oper:'nu', text:'is null'},{ oper:'nn', text:'is not null'}, {oper:'bt', text:'between'}],
+		odata: [{ oper:'eq', text:"jednako"},{ oper:'ne', text:"nije jednako"},{ oper:'lt', text:"manje"},{ oper:'le', text:"manje ili jednako"},{ oper:'gt', text:"vece"},{ oper:'ge', text:"vece ili jednako"},{ oper:'bw', text:"počinje sa"},{ oper:'bn', text:"ne počinje sa"},{ oper:'in', text:"je u"},{ oper:'ni', text:"nije u"},{ oper:'ew', text:"završava sa"},{ oper:'en', text:"ne završava sa"},{ oper:'cn', text:"sadrži"},{ oper:'nc', text:"ne sadrži"},{ oper:'nu', text:'is null'},{ oper:'nn', text:'is not null'}, {oper:'bt', text:'between'}],
 		groupOps: [	{ op: "AND", text: "sva" },	{ op: "OR",  text: "bilo koje" }	],
 		operandTitle : "Click to select search operation.",
 		resetTitle : "Reset Search Value"
@@ -69,7 +69,7 @@ $.jgrid.regional["me"] = {
 		msg: {
 			required:"Polje je obavezno",
 			number:"Unesite ispravan broj",
-			minValue:"vrijednost mora biti veća od ili jednaka sa ",
+			minValue:"vrijednost mora biti veca od ili jednaka sa ",
 			maxValue:"vrijednost mora biti manja ili jednaka sa",
 			email: "nije ispravna email adresa, nije valjda da ne umiješ ukucati mail!?",
 			integer: "Ne zajebaji se unesi cjelobrojnu vrijednost ",

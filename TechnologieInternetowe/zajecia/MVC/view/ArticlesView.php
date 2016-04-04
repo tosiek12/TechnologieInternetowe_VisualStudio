@@ -1,10 +1,4 @@
 ﻿<?php
-/**
- * @author Łukasz Socha <kontakt@lukasz-socha.pl>
- * @version: 1.0
- * @license http://www.gnu.org/copyleft/lesser.html
- */
- 
 include 'view/View.php';
  
 class ArticlesView extends View{

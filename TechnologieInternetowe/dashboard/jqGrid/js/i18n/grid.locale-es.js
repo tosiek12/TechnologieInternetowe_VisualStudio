@@ -55,7 +55,7 @@ $.jgrid.regional["es"] = {
 	    Reset: "Limpiar",
 	    odata: [{ oper:'eq', text:"igual "},{ oper:'ne', text:"no igual a"},{ oper:'lt', text:"menor que"},{ oper:'le', text:"menor o igual que"},{ oper:'gt', text:"mayor que"},{ oper:'ge', text:"mayor o igual a"},{ oper:'bw', text:"empiece por"},{ oper:'bn', text:"no empiece por"},{ oper:'in', text:"está en"},{ oper:'ni', text:"no está en"},{ oper:'ew', text:"termina por"},{ oper:'en', text:"no termina por"},{ oper:'cn', text:"contiene"},{ oper:'nc', text:"no contiene"},{ oper:'nu', text:'is null'},{ oper:'nn', text:'is not null'}, {oper:'bt', text:'between'}],
 	    groupOps: [	{ op: "AND", text: "todo" },	{ op: "OR",  text: "cualquier" }	],
-		operandTitle : "Click para seleccionar la operación de búsqueda.",
+		operandTitle : "Click para seleccionar la operacion de búsqueda.",
 		resetTitle : "Resetear valor de Búsqueda"
 	},
 	edit : {
@@ -73,14 +73,14 @@ $.jgrid.regional["es"] = {
 	        number:"Introduzca un número",
 	        minValue:"El valor debe ser mayor o igual a ",
 	        maxValue:"El valor debe ser menor o igual a ",
-	        email: "no es una dirección de correo válida",
+	        email: "no es una direccion de correo válida",
 	        integer: "Introduzca un valor entero",
 			date: "Introduza una fecha correcta ",
 			url: "no es una URL válida. Prefijo requerido ('http://' or 'https://')",
 			nodefined : " no está definido.",
 			novalue : " valor de retorno es requerido.",
-			customarray : "La función personalizada debe devolver un array.",
-			customfcheck : "La función personalizada debe estar presente en el caso de validación personalizada."
+			customarray : "La funcion personalizada debe devolver un array.",
+			customfcheck : "La funcion personalizada debe estar presente en el caso de validacion personalizada."
 		}
 	},
 	view : {
@@ -101,7 +101,7 @@ $.jgrid.regional["es"] = {
 	    deltext: " ",
 	    deltitle: "Eliminar fila seleccionada",
 	    searchtext: " ",
-	    searchtitle: "Buscar información",
+	    searchtitle: "Buscar informacion",
 	    refreshtext: "",
 	    refreshtitle: "Recargar datos",
 	    alertcap: "Aviso",
@@ -111,7 +111,7 @@ $.jgrid.regional["es"] = {
 		savetext: "",
 		savetitle: "Guardar fila",
 		canceltext: "",
-		canceltitle : "Cancelar edición de fila",
+		canceltitle : "Cancelar edicion de fila",
 		selectcaption : "Actions..."
 	},
 	col : {

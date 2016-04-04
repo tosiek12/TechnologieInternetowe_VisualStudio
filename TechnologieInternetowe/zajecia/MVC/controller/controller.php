@@ -1,6 +1,9 @@
 ﻿<?php
 abstract class Controller {
 	public function redirect($url) {
+    session_start();
+    $_SESSION['status'] = 'Updated Poem successfully';
+    session_write_close(); 
 		header("location: ".$url);
 	}
 

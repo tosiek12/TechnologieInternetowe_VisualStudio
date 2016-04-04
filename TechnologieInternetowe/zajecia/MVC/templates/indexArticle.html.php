@@ -1,9 +1,10 @@
 ﻿<? include 'templates/header.html.php'; ?>
  
-<h1>Lista artykułów</h1>
+<h1>Lista artykulow</h1>
+<img class='small' src='http://cdn11.podroze.smcloud.net/t/image/t/133471/gory-w-polsce-morskie-oko_334865.jpg'>
 <table>
     <tr>
-        <td>Tytuł</td>
+        <td>Tytul</td>
         <td>Data dodania</td>
         <td>Autor</td>
         <td>Kategoria</td>
@@ -16,7 +17,7 @@
         <td><?php echo  $articles['date_add']; ?></td>
         <td><?php echo $articles['autor']; ?></td>
         <td><?php echo $articles['name']; ?></td>
-        <td><a href="?task=articles&amp;action=delete&amp;id=<?php echo $articles['id']; ?>">usuń</a></td>
+        <td><a href="?task=articles&amp;action=delete&amp;id=<?php echo $articles['id']; ?>">usun</a></td>
 	</tr>
 	<?php } ?>
 </table>

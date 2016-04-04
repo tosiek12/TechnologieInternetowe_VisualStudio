@@ -114,3 +114,9 @@ div#flash {
     -webkit-border-radius: 50px;
     border-radius: 50px;
 }
+
+/* --------------- */
+/*  */
+img.small {
+    height: 100px;
+}

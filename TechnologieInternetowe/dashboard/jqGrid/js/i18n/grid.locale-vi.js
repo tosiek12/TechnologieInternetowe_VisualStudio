@@ -28,7 +28,7 @@ if(!$.jgrid.hasOwnProperty("regional")) {
 $.jgrid.regional["vi"] = {
 	defaults : {
 		recordtext: "View {0} - {1} of {2}",
-		emptyrecords: "Không có dữ liệu",
+		emptyrecords: "Không co dữ liệu",
 		loadtext: "Đang nạp dữ liệu...",
 		pgtext : "Trang {0} trong tổng số {1}",
 		savetext: "Saving...",
@@ -61,13 +61,13 @@ $.jgrid.regional["vi"] = {
 		editCaption: "Sửa bản ghi",
 		bSubmit: "Gửi",
 		bCancel: "Hủy bỏ",
-		bClose: "Đóng",
-		saveData: "Dữ liệu đã thay đổi! Có lưu thay đổi không?",
-		bYes : "Có",
+		bClose: "Đong",
+		saveData: "Dữ liệu đã thay đổi! Co lưu thay đổi không?",
+		bYes : "Co",
 		bNo : "Không",
 		bExit : "Hủy bỏ",
 		msg: {
-			required:"Trường dữ liệu bắt buộc có",
+			required:"Trường dữ liệu bắt buộc co",
 			number:"Hãy điền đúng số",
 			minValue:"giá trị phải lớn hơn hoặc bằng với ",
 			maxValue:"giá trị phải bé hơn hoặc bằng",
@@ -76,7 +76,7 @@ $.jgrid.regional["vi"] = {
 			date: "Hãy điền đúng ngày tháng",
 			url: "không phải là URL. Khởi đầu bắt buộc là ('http://' hoặc 'https://')",
 			nodefined : " chưa được định nghĩa!",
-			novalue : " giá trị trả về bắt buộc phải có!",
+			novalue : " giá trị trả về bắt buộc phải co!",
 			customarray : "Hàm nên trả về một mảng!",
 			customfcheck : "Custom function should be present in case of custom checking!"
 			
@@ -84,12 +84,12 @@ $.jgrid.regional["vi"] = {
 	},
 	view : {
 		caption: "Xem bản ghi",
-		bClose: "Đóng"
+		bClose: "Đong"
 	},
 	del : {
-		caption: "Xóa",
-		msg: "Xóa bản ghi đã chọn?",
-		bSubmit: "Xóa",
+		caption: "Xoa",
+		msg: "Xoa bản ghi đã chọn?",
+		bSubmit: "Xoa",
 		bCancel: "Hủy bỏ"
 	},
 	nav : {
@@ -98,7 +98,7 @@ $.jgrid.regional["vi"] = {
 		addtext:"",
 		addtitle: "Thêm mới 1 dòng",
 		deltext: "",
-		deltitle: "Xóa dòng đã chọn",
+		deltitle: "Xoa dòng đã chọn",
 		searchtext: "",
 		searchtitle: "Tìm bản ghi",
 		refreshtext: "",
@@ -121,7 +121,7 @@ $.jgrid.regional["vi"] = {
 	errors : {
 		errcap : "Lỗi",
 		nourl : "không url được đặt",
-		norecords: "Không có bản ghi để xử lý",
+		norecords: "Không co bản ghi để xử lý",
 		model : "Chiều dài của colNames <> colModel!"
 	},
 	formatter : {
