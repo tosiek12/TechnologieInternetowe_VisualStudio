@@ -1,13 +1,12 @@
 ﻿<?php
 abstract class Controller {
-
 	public function redirect($url) {
 		header("location: ".$url);
 	}
 
 	public function loadView($name, $path='view/') {
 		$path=$path.$name.'.php';
-		$name=$name.'View';
+		$name=$name;
 		try {
 			if(is_file($path)) {
 				require $path;
@@ -27,7 +26,7 @@ abstract class Controller {
 
 	public function loadModel($name, $path='model/') {
         $path=$path.$name.'.php';
-        $name=$name.'Model';
+        $name=$name;
         try {
             if(is_file($path)) {
                 require $path;

@@ -1,10 +1,9 @@
 ﻿<?php
 abstract class View {
-	
 
 	public function loadModel($name, $path='model/') {
         $path=$path.$name.'.php';
-        $name=$name.'Model';
+        $name=$name;
         try {
             if(is_file($path)) {
                 require $path;

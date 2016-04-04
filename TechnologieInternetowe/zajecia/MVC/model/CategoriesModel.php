@@ -1,5 +1,5 @@
 ﻿<?php
-include 'model/model.php';
+include 'model/Model.php';
 
 class CategoriesModel extends Model{
   public function insert($data) {

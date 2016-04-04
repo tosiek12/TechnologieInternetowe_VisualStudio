@@ -15,5 +15,5 @@
 <?php } ?>
 </tbody>
 </table>
-<pre>
+
 <?php include 'templates/footer.html.php'; ?>

@@ -155,18 +155,24 @@
     <Content Include="zajecia\template.php" />
     <Content Include="zajecia\index.php" />
     <Content Include="zajecia\saveUserData.php" />
-    <Content Include="zajecia\MVC\controller\controller.php" />
-    <Content Include="zajecia\MVC\model\model.php" />
-    <Content Include="zajecia\MVC\view\view.php" />
+    <Content Include="zajecia\MVC\controller\Controller.php" />
+    <Content Include="zajecia\MVC\model\Model.php" />
+    <Content Include="zajecia\MVC\view\View.php" />
     <Content Include="zajecia\MVC\config\sql.php" />
     <Content Include="zajecia\MVC\index.php" />
-    <Content Include="zajecia\MVC\controller\categories.php" />
-    <Content Include="zajecia\MVC\model\categories.php" />
-    <Content Include="zajecia\MVC\view\categories.php" />
+    <Content Include="zajecia\MVC\controller\CategoriesController.php" />
+    <Content Include="zajecia\MVC\model\CategoriesModel.php" />
+    <Content Include="zajecia\MVC\view\CategoriesView.php" />
     <Content Include="zajecia\MVC\templates\header.html.php" />
     <Content Include="zajecia\MVC\templates\indexCategory.html.php" />
     <Content Include="zajecia\MVC\templates\footer.html.php" />
     <Content Include="zajecia\MVC\templates\addCategory.html.php" />
+    <Content Include="zajecia\MVC\controller\ArticlesController.php" />
+    <Content Include="zajecia\MVC\model\ArticlesModel.php" />
+    <Content Include="zajecia\MVC\templates\addArticle.html.php" />
+    <Content Include="zajecia\MVC\templates\indexArticle.html.php" />
+    <Content Include="zajecia\MVC\templates\oneArticle.html.php" />
+    <Content Include="zajecia\MVC\view\ArticlesView.php" />
     <None Include="zajecia\welcome_post.php" />
     <None Include="zajecia\menu.php" />
     <Content Include="zajecia\js\bootstrap.js" />
@@ -208,8 +214,7 @@
     <Content Include="zajecia\grafika.jpg" />
     <Content Include="zajecia\index.html" />
     <Content Include="zajecia\js\zajecia.js" />
-    <Content Include="zajecia\style.css" />
-    <Content Include="zajecia\generowanie.html" />
+    <Content Include="zajecia\MVC\css\style.css" />
     <Content Include="zajecia\table.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -221,7 +226,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="zajecia\MVC\js\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

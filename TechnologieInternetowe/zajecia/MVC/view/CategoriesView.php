@@ -1,9 +1,9 @@
 ﻿<?php
-include 'view/view.php';
+include 'view/View.php';
  
 class CategoriesView extends View{
     public function  index() {
-        $cat=$this->loadModel('categories');
+        $cat=$this->loadModel('CategoriesModel');
         $this->set('catsData', $cat->getAll());
         $this->render('indexCategory');
     }

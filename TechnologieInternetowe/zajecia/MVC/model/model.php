@@ -1,20 +1,11 @@
 ﻿<?php
-abstract class Model {
-	
-	/* 
-	 * PDO class object for connection to data source
-	 * http://php.net/manual/en/book.pdo.php
-	 */
-	protected $pdo;
-  
+abstract class Model { 
   /* ms sql connection */
   protected $conn;
 	/* Set connection to db */
 	public function  __construct() {
         try {
             require 'config/sql.php';
-            //$this->pdo=new PDO('mysql:host='.$host.';dbname='.$dbase, $user, $pass);
-            //$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
             $this->conn=new mysqli($host, $user, $pass, $dbase);
             // Check connection
@@ -29,7 +20,7 @@ abstract class Model {
 	
 	public function loadModel($name, $path='model/') {
         $path=$path.$name.'.php';
-        $name=$name.'Model';
+        $name=$name;
         try {
             if(is_file($path)) {
                 require $path;

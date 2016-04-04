@@ -1,22 +1,22 @@
 ﻿<?php
-include 'controller/controller.php';
+include 'controller/Controller.php';
 
 class CategoriesController extends Controller{
   public function index() {
-    $view=$this->loadView('categories');
+    $view=$this->loadView('CategoriesView');
     $view->index();
   }
   public function add() {
-    $view=$this->loadView('categories');
+    $view=$this->loadView('CategoriesView');
     $view->add();
   }
   public function insert() {
-    $model=$this->loadModel('categories');
+    $model=$this->loadModel('CategoriesModel');
     $model->insert($_POST);
     $this->redirect('?task=categories&action=index');
   }
   public function delete() {
-    $model=$this->loadModel('categories');
+    $model=$this->loadModel('CategoriesModel');
     $model->delete($_GET['id']);
     $this->redirect('?task=categories&action=index');
   }
