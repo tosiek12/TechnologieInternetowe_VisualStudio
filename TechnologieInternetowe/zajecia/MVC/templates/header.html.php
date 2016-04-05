@@ -21,12 +21,19 @@
           <li>
             <a class="dropbtn" href="?task=articles&amp;action=index">Lista artykulow</a>
           </li>
+		  <li class="dropdown">
+            <a class="dropbtn"  href="#">Sesja</a>
+			<div class='dropdown-content'>
+				<a class="dropbtn" href="?task=register">Rejestruj Uzytkownika</a>
+				<a class="dropbtn" href="?task=resetUser">Resetuj Sesje</a>
+			</div>
+          </li>
 
           <li class="dropdown">
             <a class="dropbtn"  href="#">js-scripts</a>
 			<div class='dropdown-content'>
-				<a href="#" onclick="koloruj()">Koloruj Pasma</a>
-				<a href="#" onclick="dodajObraz()">DodajObraz</a>
+				<a class="dropbtn" href="#" onclick="koloruj()">Koloruj Pasma</a>
+				<a class="dropbtn" href="#" onclick="dodajObraz()">DodajObraz</a>
 			</div>
           </li>
         </ul>

@@ -14,14 +14,3 @@ if($_POST["name"] != "" ) {
 header("Location: index.php");
 die();
 ?>
-
-<html>
-<body>
-
-Welcome <?php echo $_POST["name"]; ?><br>
-Your email address is: <?php echo $_POST["email"]; ?>
-From session: <?php echo $_SESSION["name"]; ?>
-
-</body>
-</html>
-

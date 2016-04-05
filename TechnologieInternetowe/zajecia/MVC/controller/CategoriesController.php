@@ -14,11 +14,6 @@ class CategoriesController extends Controller{
     $model=$this->loadModel('CategoriesModel');
     $model->insert($_POST);
     $this->redirect('?task=categories&action=index');
-  }
-  public function delete() {
-    $model=$this->loadModel('CategoriesModel');
-    $model->delete($_GET['id']);
-    $this->redirect('?task=categories&action=index');
-  }
+  } 
 }
 ?>

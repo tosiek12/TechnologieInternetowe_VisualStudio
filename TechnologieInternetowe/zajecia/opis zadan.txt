@@ -33,9 +33,14 @@ space,
 czas
 
 pisanie opini np. tylko po zalogowaniu,
-
-
 2 widoki -> urzadzenie mobilne/stacjonarne
-
 // dwa spotkania:
 zrobić: 
+
+
+//5.04.2016:
+-> wykrywanie systemu z jakiego sie ktos loguje pc/mobilny
+
+-> na podst. czy uzytkownik jest zalogowany -> inne opcje widoczne!
+-> opcje oceny/komentarzy
+-> logowanie tych aktywnosci

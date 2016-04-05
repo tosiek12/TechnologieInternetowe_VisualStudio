@@ -54,14 +54,15 @@ a.dropbtn:active {
     background-color: #4CAF50;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+.dropdown:hover  {
+    //background-color: lightblue;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
 }
+/*robi akcje gdy a.dropdown:hover */
 .dropdown:hover .dropdown-content {
     display: inline;
 }
