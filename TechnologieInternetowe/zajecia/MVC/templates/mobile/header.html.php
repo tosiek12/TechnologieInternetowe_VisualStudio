@@ -2,22 +2,30 @@
   <html>
     <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <link href="css/styleMobile.css" rel="stylesheet" type="text/css" />
       <script src="js/jquery-2.2.0.min.js"></script>
       <script type="text/javascript" src="js/jquery_use.js"></script>
 
     </head>
 
     <body>
-      <nav >
+      <nav>
         <ul>
+		  <li>
+            <a class="dropbtn" href="?task=articles&amp;action=index">Przedmioty</a>
+          </li>
           <li>
             <a class="dropbtn" href="?task=categories&action=index">Lista kategorii</a>
           </li>
-          <li>
-            <a class="dropbtn" href="?task=articles&amp;action=index">Lista artykulow</a>
+
+          <li class="dropdown">
+            <a class="dropbtn"  >Administrator</a>
+			<div class='dropdown-content'>
+				<a class="dropbtn" href="?task=categories&action=add">Dodaj kategorie</a>
+				<a class="dropbtn" href="?task=articles&amp;action=add">Dodaj produkt</a>
+			</div>
           </li>
-		  
+
           <li class="dropdown">
             <a class="dropbtn"  >js-scripts</a>
 			<div class='dropdown-content'>
@@ -28,11 +36,10 @@
 
 		  <li class="dropdown">
             <a class="dropbtn"  >Panel uzytkownika</a>
-			<div class='dropdown-content'>
+			<ul class='dropdown-content'>
 				<a class="dropbtn" href="?task=permission&action=login">Login</a>
 				<?php require_once 'Functions.php'; if(isLogged()){echo('<a class="dropbtn" href="?task=permission&action=logoff">Logoff</a>');} ?>
-				
-			</div>
+            </ul>
           </li>
         </ul>
       </nav>

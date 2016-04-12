@@ -2,10 +2,19 @@
 require_once 'Functions.php';
 
 function includeHeader() {
-  if(isAdmin()) {
-    include 'templates/header.html.php';
+  $path;
+  
+  if(isMobile()) {
+    //echo ('MOBILE');
+    $path = 'templates/mobile/';
   } else {
-    include 'templates/headerRestricted.html.php';
+    $path = 'templates/';
+  }
+
+  if(isAdmin()) {
+    include ($path.'header.html.php');
+  } else {
+    include($path.'headerRestricted.html.php');
   }
 }
 ?>

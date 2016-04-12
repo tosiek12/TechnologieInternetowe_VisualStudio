@@ -151,6 +151,7 @@
     <Content Include="dashboard\mainWeb.aspx" />
     <None Include="Properties\PublishProfiles\Z - SP virtual Drive .pubxml" />
     <None Include="zajecia\data\Fields.json" />
+    <Content Include="zajecia\MVC\css\styleMobile.css" />
     <Content Include="zajecia\MVC\js\jquery-2.2.0.min.js" />
     <Content Include="zajecia\MVC\js\jquery_use.js" />
     <Content Include="zajecia\opis zadan.txt" />
@@ -167,7 +168,9 @@
     <Content Include="zajecia\MVC\view\CategoriesView.php" />
     <Content Include="zajecia\MVC\templates\header.html.php" />
     <Content Include="zajecia\MVC\templates\indexCategory.html.php" />
-    <Content Include="zajecia\MVC\templates\footer.html.php" />
+    <Content Include="zajecia\MVC\templates\footer.html.php">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="zajecia\MVC\templates\addCategory.html.php" />
     <Content Include="zajecia\MVC\controller\ArticlesController.php" />
     <Content Include="zajecia\MVC\model\ArticlesModel.php" />
@@ -217,6 +220,7 @@
     <Content Include="zajecia\MVC\templates\headerRestricted.html.php" />
     <Content Include="zajecia\MVC\welcome_post.php" />
     <Content Include="zajecia\MVC\templates\restricted.html.php" />
+    <Content Include="zajecia\MVC\templates\mobile\header.html.php" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="zajecia\gory.html" />

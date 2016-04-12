@@ -11,22 +11,23 @@
     <body>
       <nav>
         <ul>
-          <li>
-            <a class="dropbtn" href="?task=categories&action=add">Dodaj kategorie</a>
+		  <li>
+            <a class="dropbtn" href="?task=articles&amp;action=index">Przedmioty</a>
           </li>
           <li>
             <a class="dropbtn" href="?task=categories&action=index">Lista kategorii</a>
           </li>
-          <li>
-            <a class="dropbtn" href="?task=articles&amp;action=add">Dodaj produkt</a>
-          </li>
-          <li>
-            <a class="dropbtn" href="?task=articles&amp;action=index">Lista produktow</a>
-          </li>
-		  
 
           <li class="dropdown">
-            <a class="dropbtn"  href="#">js-scripts</a>
+            <a class="dropbtn"  >Administrator</a>
+			<div class='dropdown-content'>
+				<a class="dropbtn" href="?task=categories&action=add">Dodaj kategorie</a>
+				<a class="dropbtn" href="?task=articles&amp;action=add">Dodaj produkt</a>
+			</div>
+          </li>
+
+          <li class="dropdown">
+            <a class="dropbtn"  >js-scripts</a>
 			<div class='dropdown-content'>
 				<a class="dropbtn" href="#" onclick="koloruj()">Koloruj Pasma</a>
 				<a class="dropbtn" href="#" onclick="dodajObraz()">DodajObraz</a>
@@ -34,10 +35,10 @@
           </li>
 
 		  <li class="dropdown">
-            <a class="dropbtn"  href="#">Panel uzytkownika</a>
+            <a class="dropbtn"  >Panel uzytkownika</a>
 			<ul class='dropdown-content'>
 				<a class="dropbtn" href="?task=permission&action=login">Login</a>
-				<a class="dropbtn" href="?task=permission&action=logoff">Logoff</a>
+				<?php require_once 'Functions.php'; if(isLogged()){echo('<a class="dropbtn" href="?task=permission&action=logoff">Logoff</a>');} ?>
             </ul>
           </li>
         </ul>

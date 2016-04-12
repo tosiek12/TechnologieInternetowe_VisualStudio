@@ -1,7 +1,7 @@
 /* --------------- */
 /* Main page */
 body {
-    background-color:linen;
+    background-color:blanchedalmond;
     
     font-family:'Segoe UI';
 }
@@ -57,13 +57,13 @@ a.dropbtn:active {
 
 .dropdown   {
     position: relative;
-    display: inline-block;
+    display: block;
     width:150px;
 }
 
 /*robi akcje gdy a.dropdown:hover */
 .dropdown:hover .dropdown-content {
-    display: inline;
+    display: block;
 }
 
 .dropdown-content {
@@ -80,7 +80,7 @@ div.withTable {
 }
 
 table {
-    width: 50%;
+    width: 100%;
 }
 
 th {
