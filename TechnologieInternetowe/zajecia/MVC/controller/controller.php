@@ -2,7 +2,7 @@
 abstract class Controller {
 	public function redirect($url) {
     session_start();
-    $_SESSION['status'] = 'Updated Poem successfully';
+    $_SESSION['status'] = 'Updated successfully';
     session_write_close(); 
 		header("location: ".$url);
 	}

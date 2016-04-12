@@ -2,10 +2,13 @@
 /* Main page */
 body {
     background-color:linen;
+    
+    font-family:'Segoe UI';
 }
 
 /* --------------- */
 /* Menu formatting */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -16,21 +19,15 @@ ul {
 
 li {
     float: left;
+    border-right:1px solid #bbb;
 }
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
-}
-
-a {
-	border-width:1px;
-	border-style:none dashed none dashed;
-    border-color:black;
-	padding:2px;
 }
 
 a.dropbtn:link {
@@ -58,10 +55,12 @@ a.dropbtn:active {
     //background-color: lightblue;
 }
 
-.dropdown {
+.dropdown   {
     position: relative;
     display: inline-block;
+    width:150px;
 }
+
 /*robi akcje gdy a.dropdown:hover */
 .dropdown:hover .dropdown-content {
     display: inline;
@@ -69,6 +68,7 @@ a.dropbtn:active {
 
 .dropdown-content {
     display: none;
+    width:150px;
 }
 
 /* --------------- */
@@ -120,4 +120,10 @@ div#flash {
 /*  */
 img.small {
     height: 100px;
+}
+
+div.footer {
+    text-align:center;
+    font-size:12px;
+    font-family:'Segoe UI';
 }

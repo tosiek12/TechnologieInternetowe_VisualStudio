@@ -152,9 +152,10 @@
     <None Include="Properties\PublishProfiles\Z - SP virtual Drive .pubxml" />
     <None Include="zajecia\data\Fields.json" />
     <Content Include="zajecia\MVC\js\jquery-2.2.0.min.js" />
+    <Content Include="zajecia\MVC\js\jquery_use.js" />
     <Content Include="zajecia\opis zadan.txt" />
     <Content Include="zajecia\template.php" />
-    <Content Include="zajecia\MVC\templates\addUser.php" />
+    <Content Include="zajecia\MVC\templates\login.html.php" />
     <Content Include="zajecia\saveUserData.php" />
     <Content Include="zajecia\MVC\controller\Controller.php" />
     <Content Include="zajecia\MVC\model\Model.php" />
@@ -174,7 +175,10 @@
     <Content Include="zajecia\MVC\templates\indexArticle.html.php" />
     <Content Include="zajecia\MVC\templates\oneArticle.html.php" />
     <Content Include="zajecia\MVC\view\ArticlesView.php" />
-    <None Include="zajecia\MVC\welcome_post.php" />
+    <Content Include="zajecia\MVC\controller\PermissionController.php" />
+    <Content Include="zajecia\MVC\Functions.php" />
+    <Content Include="zajecia\MVC\PageBouilder.php" />
+    <None Include="zajecia\MVC\Mobile_Detect.php" />
     <None Include="zajecia\menu.php" />
     <Content Include="zajecia\js\bootstrap.js" />
     <Content Include="zajecia\js\bootstrap.min.js" />
@@ -209,6 +213,10 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="zajecia\MVC\view\PermissionView.php" />
+    <Content Include="zajecia\MVC\templates\headerRestricted.html.php" />
+    <Content Include="zajecia\MVC\welcome_post.php" />
+    <Content Include="zajecia\MVC\templates\restricted.html.php" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="zajecia\gory.html" />

@@ -1,4 +1,8 @@
-﻿<? include 'templates/header.html.php'; ?>
+﻿<?php
+require_once 'PageBouilder.php';
+includeHeader(); 
+?>
+
  
 <h1>Lista artykulow</h1>
 <img class='small' src='http://cdn11.podroze.smcloud.net/t/image/t/133471/gory-w-polsce-morskie-oko_334865.jpg'>

@@ -1,5 +1,8 @@
-﻿<? include 'templates/header.html.php'; ?>
- 
+﻿<?php
+require_once 'PageBouilder.php';
+includeHeader(); 
+?>
+
     <? foreach($this->get('articles') as $articles) { ?>
 <h1><?= $articles['title']; ?></h1>
 autor: <?= $articles['autor']; ?>, data dodania: <?= $articles['date_add']; ?><br />

@@ -1,4 +1,7 @@
-﻿<?php include 'templates/header.html.php'; ?>
+﻿<?php
+require_once 'PageBouilder.php';
+includeHeader(); 
+?>
 
 <h1>Dodaj kategorie</h1>
 <form action="?task=categories&action=insert" method="post">

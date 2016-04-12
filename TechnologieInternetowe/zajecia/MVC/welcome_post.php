@@ -1,16 +1,13 @@
 <?php
-session_start();
+require_once 'Functions.php';
 
-if($_POST["name"] != "" ) {
-	// Set session variables
-	$_SESSION["name"] = $_POST["name"];
-} else {
-	// remove all session variables
-	session_unset();
-
-	// destroy the session
-	session_destroy(); 
+if(isset($_POST['submitLogin']))
+{
+   saveAndRedirect();
+} else if(isset($_POST['submitLogin']))
+{
+   saveAndRedirect();
 }
-header("Location: index.php");
-die();
+
+
 ?>

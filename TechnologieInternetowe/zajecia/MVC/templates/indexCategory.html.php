@@ -1,4 +1,10 @@
-﻿<?php include 'templates/header.html.php'; ?></pre>
+﻿<?php
+require_once 'PageBouilder.php';
+includeHeader(); 
+?>
+
+
+</pre>
 <h1>Lista kategorii</h1>
 
 <table>

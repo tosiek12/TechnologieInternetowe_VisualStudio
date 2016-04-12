@@ -1,5 +1,6 @@
 ﻿<?php
 include 'controller/Controller.php';
+require_once 'Functions.php';
 
 class ArticlesController extends Controller{
   public function index() {
@@ -14,15 +15,27 @@ class ArticlesController extends Controller{
       $view=$this->loadView('ArticlesView');
       $view->add();
   }
+  
   public function insert() {
-      $model=$this->loadModel('ArticlesModel');
-      $model->insert($_POST);
-      $this->redirect('?task=articles&action=index');
+     if(isAdmin()){
+        $model=$this->loadModel('ArticlesModel');
+        $model->insert($_POST);
+        $this->redirect('?task=articles&action=index');
+      } else {
+        $view=$this->loadView('PermissionView');
+        $view->restricted();
+      }
   }
+  
   public function delete() {
-      $model=$this->loadModel('ArticlesModel');
-      $model->delete($_GET['id']);
-      $this->redirect('?task=articles&action=index');
+      if(isAdmin()){
+        $model=$this->loadModel('ArticlesModel');
+        $model->delete($_GET['id']);
+        $this->redirect('?task=articles&action=index');
+      } else {
+        $view=$this->loadView('PermissionView');
+        $view->restricted();
+      }
   }
 }
 ?>
