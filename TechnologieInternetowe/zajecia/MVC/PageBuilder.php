@@ -5,7 +5,6 @@ function includeHeader() {
   $path;
   
   if(isMobile()) {
-    //echo ('MOBILE');
     $path = 'templates/mobile/';
   } else {
     $path = 'templates/';
@@ -17,4 +16,16 @@ function includeHeader() {
     include($path.'headerRestricted.html.php');
   }
 }
+function includeFooter() {
+  $path;
+  
+  if(isMobile()) {
+    $path = 'templates/mobile/';
+  } else {
+    $path = 'templates/';
+  }
+
+  include ($path.'footer.html.php');
+}
+
 ?>

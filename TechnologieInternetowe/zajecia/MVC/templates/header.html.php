@@ -12,7 +12,7 @@
       <nav>
         <ul>
 		  <li>
-            <a class="dropbtn" href="?task=articles&amp;action=index">Przedmioty</a>
+            <a class="dropbtn" href="?task=articles&amp;action=index">Strona glowna</a>
           </li>
           <li>
             <a class="dropbtn" href="?task=categories&action=index">Lista kategorii</a>
@@ -21,8 +21,8 @@
           <li class="dropdown">
             <a class="dropbtn"  >Administrator</a>
 			<div class='dropdown-content'>
-				<a class="dropbtn" href="?task=categories&action=add">Dodaj kategorie</a>
-				<a class="dropbtn" href="?task=articles&amp;action=add">Dodaj produkt</a>
+				<a class="dropbtn" href="?task=articles&action=add">Dodaj Artykul</a>
+				<a class="dropbtn" href="?task=categories&amp;action=add">Dodaj kategorie</a>
 			</div>
           </li>
 

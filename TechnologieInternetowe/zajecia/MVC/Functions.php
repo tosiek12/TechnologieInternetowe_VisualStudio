@@ -38,7 +38,7 @@ function clearSessionAndRedirect() {
 
 function saveAndRedirect()
 {
-    session_start();
+  session_start();
   // Set session variables
   $_SESSION["name"] = $_POST["name"];
   header("Location: index.php");
@@ -62,15 +62,17 @@ function SetSesionParameters() {
     $ip = $_SERVER['REMOTE_ADDR'];
     $browser = $_SERVER['HTTP_USER_AGENT'];
     $referrer = $_SERVER['HTTP_REFERER'];
-
+    
+    if ($referred == "") {
+      $referrer = "directly";
+    }
+    
     //Save in session:
     $_SESSION["ip"] = $ip;
     $_SESSION["browser"] = $browser;
     $_SESSION["referrer"] = $referrer;
             
-    if ($referred == "") {
-      $referrer = "This page was accessed directly";
-    }
+    
   }
 }
 ?>

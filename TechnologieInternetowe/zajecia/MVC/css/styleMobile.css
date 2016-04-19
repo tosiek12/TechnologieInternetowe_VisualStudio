@@ -123,7 +123,28 @@ img.small {
 }
 
 div.footer {
+    background-color:#555;
+    color: white;
     text-align:center;
     font-size:12px;
-    font-family:'Segoe UI';
+}
+
+div.body {
+    padding: 0px 5px 5px 5px;
+}
+
+/* --------------- */
+/* articles view */
+div.allArticles {
+    overflow: auto;
+}
+
+div.allArticles table {
+    width: auto;
+}
+div.article {
+    border:1px solid black;
+    display: block;
+    float: left;
+    
 }

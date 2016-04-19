@@ -180,7 +180,7 @@
     <Content Include="zajecia\MVC\view\ArticlesView.php" />
     <Content Include="zajecia\MVC\controller\PermissionController.php" />
     <Content Include="zajecia\MVC\Functions.php" />
-    <Content Include="zajecia\MVC\PageBouilder.php" />
+    <Content Include="zajecia\MVC\PageBuilder.php" />
     <None Include="zajecia\MVC\Mobile_Detect.php" />
     <None Include="zajecia\menu.php" />
     <Content Include="zajecia\js\bootstrap.js" />
@@ -221,6 +221,11 @@
     <Content Include="zajecia\MVC\welcome_post.php" />
     <Content Include="zajecia\MVC\templates\restricted.html.php" />
     <Content Include="zajecia\MVC\templates\mobile\header.html.php" />
+    <Content Include="zajecia\MVC\templates\mobile\footer.html.php">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="zajecia\MVC\templates\mobile\headerRestricted.html.php" />
+    <Content Include="zajecia\MVC\templates\mobile\indexArticle.html.php" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="zajecia\gory.html" />

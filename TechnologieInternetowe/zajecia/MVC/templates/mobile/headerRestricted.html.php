@@ -9,23 +9,15 @@
     </head>
 
     <body>
-      <nav>
+      <nav >
         <ul>
-		  <li>
+          <li>
             <a class="dropbtn" href="?task=articles&amp;action=index">Strona glowna</a>
           </li>
           <li>
             <a class="dropbtn" href="?task=categories&action=index">Lista kategorii</a>
           </li>
-
-          <li class="dropdown">
-            <a class="dropbtn"  >Administrator</a>
-			<div class='dropdown-content'>
-				<a class="dropbtn" href="?task=articles&amp;action=add">Dodaj artykul</a>
-				<a class="dropbtn" href="?task=categories&action=add">Dodaj kategorie</a>
-			</div>
-          </li>
-
+		  
           <li class="dropdown">
             <a class="dropbtn"  >js-scripts</a>
 			<div class='dropdown-content'>
@@ -36,10 +28,12 @@
 
 		  <li class="dropdown">
             <a class="dropbtn"  >Panel uzytkownika</a>
-			<ul class='dropdown-content'>
+			<div class='dropdown-content'>
 				<a class="dropbtn" href="?task=permission&action=login">Login</a>
+
 				<?php require_once 'Functions.php'; if(isLogged()){echo('<a class="dropbtn" href="?task=permission&action=logoff">Logoff</a>');} ?>
-            </ul>
+				
+			</div>
           </li>
         </ul>
       </nav>

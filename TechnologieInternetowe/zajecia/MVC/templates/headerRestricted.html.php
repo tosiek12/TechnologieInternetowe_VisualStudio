@@ -11,11 +11,11 @@
     <body>
       <nav >
         <ul>
-          <li>
-            <a class="dropbtn" href="?task=categories&action=index">Lista kategorii</a>
+		  <li>
+            <a class="dropbtn" href="?task=articles&amp;action=index">Strona glowna</a>
           </li>
           <li>
-            <a class="dropbtn" href="?task=articles&amp;action=index">Lista artykulow</a>
+            <a class="dropbtn" href="?task=categories&action=index">Lista kategorii</a>
           </li>
 		  
           <li class="dropdown">
