@@ -16,9 +16,7 @@ includeHeader();
     <?php foreach($this->get('articles') as $articles) { ?>
     <tr>
       <td>
-        <a href="?task=articles&amp;action=one&amp;id="
-          <?php echo $articles['id']; ?>"><?php echo $articles['title']; ?>
-        </a>
+        <?php echo('<a href="?task=articles&amp;action=one&amp;id='.$articles['id'].'">'.$articles['title'].'</a>'); ?>
       </td>
       <td>
         <?php echo  $articles['date_add']; ?>

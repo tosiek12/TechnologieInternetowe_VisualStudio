@@ -15,9 +15,7 @@ includeHeader();
         </tr>
         <tr class='title'>
           <td>
-            <a href="?task=articles&amp;action=one&amp;id="
-              <?php echo $articles['id']; ?>"><?php echo $articles['title']; ?>
-            </a>
+               <?php echo('<a href="?task=articles&amp;action=one&amp;id='.$articles['id'].'">'.$articles['title'].'</a>'); ?>
           </td>
         </tr>
         <tr>
