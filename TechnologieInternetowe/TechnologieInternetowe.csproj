@@ -182,13 +182,19 @@
     <Content Include="zajecia\MVC\Functions.php" />
     <Content Include="zajecia\MVC\PageBuilder.php" />
     <Content Include="zajecia\lab1\index.php" />
-    <Content Include="zajecia\lab1\login.php" />
-    <Content Include="zajecia\lab1\zaloguj.php" />
     <Content Include="zajecia\lab1\config\sql.php" />
-    <Content Include="zajecia\lab1\controller\controller.php" />
-    <Content Include="zajecia\lab1\model\model.php" />
-    <Content Include="zajecia\lab1\view\mainPage.php" />
+    <Content Include="zajecia\lab1\controller\controller.php">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="zajecia\lab1\model\model.php">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="zajecia\lab1\view\mainPageUnlogged.php" />
     <Content Include="zajecia\lab1\view\viewLoguj.php" />
+    <Content Include="zajecia\lab1\view\mainPageLogged.php" />
+    <Content Include="zajecia\lab1\controller\controllerLogin.php">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="zajecia\MVC\Mobile_Detect.php" />
     <None Include="zajecia\menu.php" />
     <Content Include="zajecia\js\bootstrap.js" />
