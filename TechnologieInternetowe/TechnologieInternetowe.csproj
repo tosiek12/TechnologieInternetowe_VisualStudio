@@ -195,6 +195,7 @@
     <Content Include="zajecia\lab1\controller\controllerLogin.php">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="zajecia\lab1\view\redirectView.php" />
     <None Include="zajecia\MVC\Mobile_Detect.php" />
     <None Include="zajecia\menu.php" />
     <Content Include="zajecia\js\bootstrap.js" />

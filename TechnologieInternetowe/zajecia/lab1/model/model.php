@@ -1,62 +1,44 @@
 <?php
-class Model {  
+class Model {
+    private $conn2;
+    private $conn;
     
-   
    public function getUser_simple($name, $password) {
-	  
     //Open connection:
-    $conn2 = $this->connect_mysql();
-	  $conn = $this->connect();
-    
-	  if($conn != 0) {
+	  if($this->connect_Secured()) {
 		  $query="SELECT * FROM config_users where login = '".$name."' and password = '".$password."';";
-		
-		  echo("SQL: ".$query."<br/>");	
-		  echo("<br/>");
-		
-		  $select=$conn->query($query);
-		
-		  echo('results: '.$select->num_rows."<br/>");
-		
+		  
+      $select=$this->conn->query($query);
 		  if ($select->num_rows > 0) {
 			  $select->close();
         return 1;		  
       } else {
 		    return 0;
       }
-		
 	  } else {
-		  echo('error'."<br/>");	
+      return 0;
 	  }
   }
 
   public function getUser_protected($name, $password) {	
-    $conn2 = $this->connect_mysql();
-	  $conn = $this->connect();
-	
 	  //Open connection:
-	  if($conn != 0) {
+	  if($this->connect_Secured()) {
 		  $query = sprintf("SELECT * FROM config_users WHERE login='%s' AND password='%s'",
               mysql_real_escape_string($name),
               mysql_real_escape_string($password));
 			
-		  echo("SQL: ".$query."<br/>");	
-		  echo("<br/>");
-		
-		  $select=$conn->query($query);
-      
+		  $select=$this->conn->query($query);
 		  if ($select->num_rows > 0) {
 			  $select->close();
         return 1;		  
       } else {
 		    return 0;
       }
-		
 	  } else {
-		  echo('error'."<br/>");	
+      return 0;
 	  }
   }
-
+  
   private function connect_mysql() {
 	  //Open connection:
 	  try {
@@ -93,7 +75,15 @@ class Model {
 	  }
 	  return 0;
   }
-
+  
+  private function connect_Secured() {
+    $this->conn2 = $this->connect_mysql();
+	  $this->conn = $this->connect();
+    if($this->conn == 0) {
+      return 0;
+    }
+    return 1;
+  }
 }
 
 ?>
